@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <fragment
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:id="@+id/FruitIntroduceFrag_tablet"
+        android:name="com.example.lkweek4.FruitIntroduceFragment"/>
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/darker_gray"/>
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:id="@+id/FruitBuyLayout">
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FruitBuyFrag_tablet"
+            android:name="com.example.lkweek4.FruitBuyFragment_Lk"/>
+    </FrameLayout>
+</LinearLayout>
